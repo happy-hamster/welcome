@@ -5,12 +5,12 @@ let animationConfig = {
 let statusConfig = {
   yes: {
     class: 'yes',
-    text: 'Go',
-    title: 'Almost Full'
+    text: 'LOS',
+    title: 'Fast voll'
   },
   no: {
     class: 'no',
-    text: 'No',
+    text: 'STOP',
     title: 'All Clear'
   }
 }
@@ -19,7 +19,7 @@ let statusConfig = {
 let isFull = true
 let isInitialRun = true
 
-let updateStatusBadge = function(selectedStatus) {
+let updateStatusBadge = function (selectedStatus) {
   let badge = $('.status-badge')
   let node = $('.animation-inner')
 
@@ -30,7 +30,7 @@ let updateStatusBadge = function(selectedStatus) {
   isFull = !isFull
 }
 
-let updateStatusCapacity = function() {
+let updateStatusCapacity = function () {
   if (isFull) {
     let node = $('.status-capacity')
 
@@ -49,16 +49,16 @@ let updateStatusCapacity = function() {
     isFull = false
     isInitialRun = false
 
-    $('.status-title').text('Empty')
+    $('.status-title').text('Leer')
 
     updateStatusBadge('yes')
   }
 }
 
-$(document).on('ready', function() {
+$(document).on('ready', function () {
 
   if (isInitialRun) {
-    setTimeout(function() {
+    setTimeout(function () {
       updateStatusCapacity()
     }, 5000)
   }
