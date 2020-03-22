@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="38px" viewBox="0 0 15 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Icon: Person Outline</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-737.000000, -553.000000)" fill-rule="nonzero" stroke="#9DA9A0" stroke-width="2">
+            <g id="Selection" transform="translate(689.000000, 553.000000)">
+                <g id="Availability">
+                    <g id="Icon:-Person-Outline" transform="translate(48.000000, 0.000000)">
+                        <circle id="Oval" cx="7.5" cy="3.90625" r="2.90625"></circle>
+                        <path d="M3.63210937,11.390625 C3.2449528,11.390625 2.89025058,11.5347923 2.62314067,11.7763992 C2.35648553,12.0175948 2.1779085,12.3552603 2.13970401,12.7395525 L1.24960937,24.390625 L3.52209694,24.390625 L4.63714657,35.5411213 C4.67539748,35.9251297 4.854819,36.2625834 5.12186731,36.5038921 C5.38952219,36.7457489 5.74469435,36.890625 6.13210937,36.890625 L8.86960937,36.890625 C9.25650685,36.890625 9.61087823,36.746054 9.87786285,36.5045604 C10.1447822,36.2631258 10.3237983,35.9253606 10.3620338,35.5415061 L11.4771218,24.390625 L13.9977205,24.1214111 L12.670814,12.3705167 C12.4118975,12.1732754 11.9950388,12.0251909 11.3637258,11.8860828 C9.92100066,11.5681823 7.5440289,11.390625 3.63210937,11.390625 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

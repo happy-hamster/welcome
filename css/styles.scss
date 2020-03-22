@@ -1,0 +1,92 @@
+@import 'sanitize';
+@import 'colors';
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+
+
+@import 'animation';
+
+html {
+  box-sizing: border-box;
+  color: $midnight-blue;
+  font-family: 'Roboto', sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.logo {
+  position: fixed;
+  display: inline-block;
+  top: 60px;
+  left: 40px;
+
+  z-index: 999;
+}
+
+.section-inner {
+  position: relative;
+  top: 0; left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: inline-flex;
+
+  &.start {
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  &.community {
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  background: white;
+}
+
+.stage {
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  letter-spacing: 0.08px;
+
+  margin: 0;
+
+  &.intro { font-weight: $medium; }
+  &.secondary {
+    font-weight: $regular;
+    margin-bottom: 20px;
+  }
+  &.kiez {
+    max-width: 450px;
+    margin: 30px 0;
+    text-align: center;
+  }
+}
+
+a {
+  color: $turquoise;
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: $light;
+
+  margin: 0;
+}
+
+footer {
+  color: $greenish-grey;
+  padding: 20px 0 40px 0;
+  text-align: center;
+}
+
+.display-none { display: none !important; }
