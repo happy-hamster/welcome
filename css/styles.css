@@ -558,6 +558,7 @@ textarea,
   90% {
     -webkit-transform: translate3d(0, -4px, 0);
     transform: translate3d(0, -4px, 0); } }
+
 @keyframes bounce {
   from,
   20%,
@@ -582,6 +583,7 @@ textarea,
   90% {
     -webkit-transform: translate3d(0, -4px, 0);
     transform: translate3d(0, -4px, 0); } }
+
 .bounce {
   -webkit-animation-name: bounce;
   animation-name: bounce;
@@ -618,6 +620,7 @@ textarea,
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
+
 @keyframes bounceIn {
   from,
   20%,
@@ -648,6 +651,7 @@ textarea,
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
+
 .bounceIn {
   -webkit-animation-duration: 0.75s;
   animation-duration: 0.75s;
@@ -663,6 +667,7 @@ textarea,
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -672,6 +677,7 @@ textarea,
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
+
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown; }
@@ -685,6 +691,7 @@ textarea,
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
+
 .animated.delay-05s {
   -webkit-animation-delay: .5s;
   animation-delay: .5s; }
@@ -776,5 +783,3 @@ footer {
 
 .display-none {
   display: none !important; }
-
-/*# sourceMappingURL=styles.css.map */
