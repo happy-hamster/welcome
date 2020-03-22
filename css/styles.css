@@ -783,3 +783,21 @@ footer {
 
 .display-none {
   display: none !important; }
+
+.phone-disclaimer-hide {
+  display: block; }
+  @media (orientation: portrait) {
+    .phone-disclaimer-hide {
+      display: none; } }
+
+.phone-disclaimer {
+  display: none;
+  height: calc(100vh - 60px); }
+  .phone-disclaimer > p {
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    align-self: center; }
+  @media (orientation: portrait) {
+    .phone-disclaimer {
+      display: flex; } }
