@@ -23,6 +23,8 @@ html {
   top: 60px;
   left: 40px;
 
+  width: 100px;
+
   z-index: 999;
 }
 
@@ -72,12 +74,14 @@ p {
   }
 }
 
+.illustration { width: 400px; }
+
 a {
   color: $turquoise;
 }
 
 h3 {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: $light;
 
   margin: 0;

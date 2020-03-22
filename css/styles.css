@@ -721,6 +721,7 @@ html {
   display: inline-block;
   top: 60px;
   left: 40px;
+  width: 100px;
   z-index: 999; }
 
 .section-inner {
@@ -757,11 +758,14 @@ p {
     margin: 30px 0;
     text-align: center; }
 
+.illustration {
+  width: 400px; }
+
 a {
   color: #00b9ae; }
 
 h3 {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 300;
   margin: 0; }
 
