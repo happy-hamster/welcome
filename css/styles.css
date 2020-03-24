@@ -730,6 +730,8 @@ html {
   left: 40px;
   width: 100px;
   z-index: 999; }
+  .logo.projekt {
+    top: 200px !important; }
 
 .section-inner {
   position: relative;
@@ -744,6 +746,10 @@ html {
     align-items: center;
     flex-flow: column; }
   .section-inner.community {
+    justify-content: center;
+    align-items: center;
+    flex-flow: column; }
+  .section-inner.tutorial {
     justify-content: center;
     align-items: center;
     flex-flow: column; }
@@ -801,3 +807,114 @@ footer {
   @media (orientation: portrait) {
     .phone-disclaimer {
       display: flex; } }
+
+/* Tutorial-Slider */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative; }
+
+.mySlides {
+  display: none; }
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; }
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; }
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active, .dot:hover {
+  background-color: #717171; }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+.tutorial-content {
+  border: 2px solid #E2E2E2;
+  border-radius: 2px;
+  width: 70vw;
+  height: 50vh;
+  box-shadow: 0px 0px 30px 0px #E2E2E2; }
+
+#bottom-space {
+  margin-bottom: 2%; }
+
+.typewriter {
+  position: absolute;
+  left: 250px;
+  top: 92px;
+  font-size: 20px;
+  letter-spacing: 0.08px;
+  font-weight: 500;
+  z-index: 100;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  letter-spacing: .05em;
+  animation: typing 2s steps(80, end), blink-caret 0.75s step-end infinite; }
+
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 20%; } }
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: orange; } }
+
+footer {
+  background-color: #26c485;
+  color: white; }
