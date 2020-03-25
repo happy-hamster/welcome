@@ -1,5 +1,6 @@
 @import 'sanitize';
 @import 'colors';
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
 
 $light: 300;
 $regular: 400;
@@ -26,10 +27,19 @@ html {
   width: 100px;
 
   z-index: 999;
+}
 
-  &.projekt {
-    top: 200px !important;
-  }
+.projekt {
+  position: absolute;
+  bottom: 3vh;
+  left: 0;
+  width: 300px;
+}
+
+@media (max-width: 990px) {
+  .projekt {
+    position: static;
+  } 
 }
 
 .section-inner {
@@ -82,6 +92,13 @@ p {
     margin: 30px 0;
     text-align: center;
   }
+  &.tutorial {
+    font-size: 1.7vw;
+  }
+}
+
+.subline {
+  font-size: 1.3vw;
 }
 
 .illustration { width: 400px; }
@@ -102,6 +119,8 @@ footer {
   padding: 20px 0 40px 0;
   text-align: center;
 }
+
+.relative { position: relative}
 
 .display-none { display: none !important; }
 
@@ -143,7 +162,7 @@ footer {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: #26c485;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -157,7 +176,7 @@ footer {
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: $midnight-blue;
 }
 
 .text {
@@ -204,6 +223,7 @@ footer {
 
 .tutorial-content {
   border: 2px solid #E2E2E2;
+  position: relative;
   border-radius: 2px;
   width: 70vw;
   height: 50vh;
@@ -214,34 +234,65 @@ footer {
   margin-bottom: 2%;
 }
 
-.typewriter {
+.fab {
+  margin: 1vh;
+  color: white
+}
+
+#slide1 {
   position: absolute;
-  left: 250px;
-  top: 92px;
-  font-size: 20px;
-  letter-spacing: 0.08px;
-  font-weight: $medium;
-  z-index: 100;
-  overflow: hidden;
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  letter-spacing: .05em;
-  animation: 
-    typing 2s steps(80, end),
-    blink-caret .75s step-end infinite;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  left: 50px;
+  bottom: 50px;
+  background-color: #F1F1F1;
+  padding: 1%;
+  border-radius: 3px
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 20% }
+.tutorial_number {
+  width: 6vh;
+  height: auto;
+  padding-right: 3%
+  
 }
 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+#location_permission {
+  width: 30vw;
+  position: absolute;
+  left: 50px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.location_left {
+  position: absolute;
+  top: 25%;
+}
+.location_right {
+  position: absolute;
+  top: 25%;
+  left: 55%;
+  right: 10%;
+}
+
+.headline {
+  background-color: #F1F1F1;
+  padding: 2%;
+  border-radius: 3px;
+  margin-bottom: 4%
 }
 
 footer {
   background-color: $greenblue;
   color: white;
+  position: relative;
+  & > p {
+    margin-bottom: 1%;
+    font-size: 16px;
+  }
 }
