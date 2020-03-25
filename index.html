@@ -11,7 +11,6 @@
 <body>
 
   <img src="img/logo.svg" class="logo" width="200px" height="auto">
-  <img src="img/Logo_Projekt_01_alt.png" class="logo projekt" width="200px" height="auto">
 
   <div class="section phone-disclaimer">
     <p>
@@ -25,7 +24,7 @@
         <br>
         <p class="intro">Wann geht's raus, wann bleibst du lieber drin?</p>
         <p class="secondary">Supermarkt-Ansteh-Alarm. Dank der Community.</p>
-        <a href="https://www.youtube.com/watch?v=q9qmpRiV7Co" target="_blank">Video ansehen</a>
+        <!-- <a href="https://www.youtube.com/watch?v=q9qmpRiV7Co" target="_blank">Video ansehen</a> -->
 
         <div class="animation-wrapper">
           <div class="animation-inner">
@@ -46,7 +45,7 @@
 
   <div class="section phone-disclaimer-hide">
     <div class="section-inner tutorial">
-      <h3>Sich selbst und andere schützen</h3>
+      <h3>Sich selbst und andere schützen -</h3>
       <h3 id="bottom-space">So einfach kann es sein!</h3>
       <!-- <img class="animated fadeInDown" src="img/checkout_illustration.svg" /> -->
 
@@ -54,17 +53,40 @@
       <div class="slideshow-container">
         <div class="mySlides fade">
           <div class="tutorial-content">
-            <img src="img/browser.svg">
-            <h3 class="intro typewriter">happyhamster.org</h3>
+            <div class="relative">
+              <img src="img/browser.svg">
+              <h3 class="intro typewriter">happyhamster.org</h3>
+            </div>
+            <div id="slide1">
+              <!-- <img class="tutorial_number" src="img/1.svg"> -->
+              <p>Besuche unsere Website happyhamster.org</p>
+            </div>
           </div>
-          <!--           <img src="img/checkout_illustration.svg" style="width:100%"> -->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="tutorial-content flex">
+            <div class="location_left">
+              <img id="location_permission" src="img/location_permission.png">
+            </div>
+            <div class="location_right">
+              <div class="headline">
+                <!-- <img class="tutorial_number" src="img/2.svg"> -->
+                <p class="tutorial">Erlaube Happy Hamster den Zugriff auf Deinen Standort.</p>
+              </div>
+              <p class="subline">So können wir Supermärkte in Deiner Nähe finden.</p>
+            </div>
+
+          </div>
+          <!--           <img src="img/community_illustration.svg" style="width:100%">
+ -->
         </div>
 
         <div class="mySlides fade">
           <div class="tutorial-content">
 
           </div>
-          <!--           <img src="img/community_illustration.svg" style="width:100%">
+          <!--           <img src="img/hero_illustration.svg" style="width:100%">
  -->
         </div>
 
@@ -85,6 +107,7 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
       </div>
 
     </div>
@@ -101,7 +124,25 @@
     </div>
   </div>
 
-  <footer>Mit ❤︎ (und Mate) zuhause gebaut • #WirBleibenZuhause</footer>
+  <footer>
+    <p>Mit ❤︎ (und Mate) zuhause gebaut • #WirBleibenZuhause</p>
+    <div class="socialmedia">
+      <a href="https://www.instagram.com/happyhamsterapp/" target="_blank">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>  
+      <a href="https://github.com/SAKPaaS" target="_blank">
+        <i class="fab fa-github fa-lg"></i>
+      </a>
+      <a href="https://twitter.com/happyhamsterapp" target="_blank"></a>
+        <i class="fab fa-twitter fa-lg"></i>
+      </a>
+      <a href="https://www.youtube.com/channel/UCEYDgvcxXbOLIrKXZcC4nCA" target="_blank">
+        <i class="fab fa-youtube fa-lg"></i>
+      </a>
+    </div>
+    <img src="img/Logo_Projekt_01.png" class="projekt">
+
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
