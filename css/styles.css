@@ -3,6 +3,7 @@
 /**
  * Add border box sizing in all browsers (opinionated).
  */
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
 *,
 ::before,
 ::after {
@@ -715,6 +716,34 @@ textarea,
 .hide {
   visibility: hidden !important; }
 
+.typewriter {
+  position: absolute;
+  left: 25%;
+  top: 37%;
+  font-size: 1.8vw;
+  letter-spacing: 0.08px;
+  font-weight: 500;
+  z-index: 100;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  letter-spacing: .05em;
+  animation: typing 2s steps(80, end), blink-caret 0.75s step-end infinite; }
+
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 20%; } }
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: orange; } }
+
 html {
   box-sizing: border-box;
   color: #0b0033;
@@ -730,8 +759,16 @@ html {
   left: 40px;
   width: 100px;
   z-index: 999; }
-  .logo.projekt {
-    top: 200px !important; }
+
+.projekt {
+  position: absolute;
+  bottom: 3vh;
+  left: 0;
+  width: 300px; }
+
+@media (max-width: 990px) {
+  .projekt {
+    position: static; } }
 
 .section-inner {
   position: relative;
@@ -770,6 +807,11 @@ p {
     max-width: 450px;
     margin: 30px 0;
     text-align: center; }
+  p.tutorial {
+    font-size: 1.7vw; }
+
+.subline {
+  font-size: 1.3vw; }
 
 .illustration {
   width: 400px; }
@@ -786,6 +828,9 @@ footer {
   color: #9da9a0;
   padding: 20px 0 40px 0;
   text-align: center; }
+
+.relative {
+  position: relative; }
 
 .display-none {
   display: none !important; }
@@ -823,7 +868,7 @@ footer {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: #26c485;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -835,7 +880,7 @@ footer {
   border-radius: 3px 0 0 3px; }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: #0b0033; }
 
 .text {
   color: #f2f2f2;
@@ -879,6 +924,7 @@ footer {
 
 .tutorial-content {
   border: 2px solid #E2E2E2;
+  position: relative;
   border-radius: 2px;
   width: 70vw;
   height: 50vh;
@@ -887,34 +933,56 @@ footer {
 #bottom-space {
   margin-bottom: 2%; }
 
-.typewriter {
+.fab {
+  margin: 1vh;
+  color: white; }
+
+#slide1 {
   position: absolute;
-  left: 250px;
-  top: 92px;
-  font-size: 20px;
-  letter-spacing: 0.08px;
-  font-weight: 500;
-  z-index: 100;
-  overflow: hidden;
-  border-right: .15em solid orange;
-  /* The typwriter cursor */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   white-space: nowrap;
-  /* Keeps the content on a single line */
-  letter-spacing: .05em;
-  animation: typing 2s steps(80, end), blink-caret 0.75s step-end infinite; }
+  left: 50px;
+  bottom: 50px;
+  background-color: #F1F1F1;
+  padding: 1%;
+  border-radius: 3px; }
 
-@keyframes typing {
-  from {
-    width: 0; }
-  to {
-    width: 20%; } }
+.tutorial_number {
+  width: 6vh;
+  height: auto;
+  padding-right: 3%; }
 
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent; }
-  50% {
-    border-color: orange; } }
+#location_permission {
+  width: 30vw;
+  position: absolute;
+  left: 50px; }
+
+.flex {
+  display: flex;
+  align-items: center; }
+
+.location_left {
+  position: absolute;
+  top: 25%; }
+
+.location_right {
+  position: absolute;
+  top: 25%;
+  left: 55%;
+  right: 10%; }
+
+.headline {
+  background-color: #F1F1F1;
+  padding: 2%;
+  border-radius: 3px;
+  margin-bottom: 4%; }
 
 footer {
   background-color: #26c485;
-  color: white; }
+  color: white;
+  position: relative; }
+  footer > p {
+    margin-bottom: 1%;
+    font-size: 16px; }
