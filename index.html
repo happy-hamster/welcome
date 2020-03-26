@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Happy Hamster</title>
   <link href="css/styles.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
@@ -45,7 +47,7 @@
 
   <div class="section phone-disclaimer-hide">
     <div class="section-inner tutorial fullheight">
-      <h3>Sich selbst und andere schützen -</h3>
+      <h3 id="section2headline">Sich selbst und andere schützen -</h3>
       <h3 class="bottom-space">So einfach kann es sein!</h3>
       <!-- <img class="animated fadeInDown" src="img/checkout_illustration.svg" /> -->
 
@@ -113,7 +115,7 @@
     </div>
   </div>
 
-  <div class="section-inner fullheight phone-disclaimer-hide">
+  <div class="section-inner fullheight phone-disclaimer-hide" id="support">
     <div class="section-small community">
       <h3>Wir haben große Pläne!</h3>
       <p class="intro bottom-space center">Auf unserer Roadmap erfährst Du mehr über unser Projekt <br>
@@ -124,33 +126,35 @@
           <img class="strasse" src="img/strasse.svg">
         </a>
       </div>
+    </div>
 
-      <div class="section-small community">
-        <h3 id="support_headline" class="bottom-space">Dein Support ist alles!</h3>
-        <div class="support flex">
-          <a href="https://www.youtube.com/channel/UCEYDgvcxXbOLIrKXZcC4nCA" class="cleanlink" target="_blank">
-            <div class="support_left">
-              <p class="tutorial center bottom-space">Schau dir unser Pitch-Video an und abonniere unseren YouTube-Kanal!</p>
-              <iframe src="https://www.youtube.com/embed/q9qmpRiV7Co" class="video"
-              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-              </iframe>
-            </div>
-          </a>
+    <div class="section-small community section-support">
+      <h3 id="support_headline" class="bottom-space">Dein Support ist alles!</h3>
+      <div class="support flex">
+        <a href="https://www.youtube.com/channel/UCEYDgvcxXbOLIrKXZcC4nCA" class="cleanlink" target="_blank">
+          <div class="support_left">
+            <p class="tutorial center bottom-space">Schau dir unser Pitch-Video an und abonniere unseren YouTube-Kanal!
+            </p>
+            <iframe src="https://www.youtube.com/embed/q9qmpRiV7Co" class="video" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+        </a>
 
-          <a href="https://www.paypal.com/pools/c/8nF7CeQemp" class="cleanlink" target="_blank">
-            <div class="support_right">
-              <p class="tutorial center">Unterstütze unseren PayPal-Moneypool:</p>
-              <img class="paypal" src="img/paypal.svg">
-            </div>
-          </a>
-        </div>
+        <a href="https://www.paypal.com/pools/c/8nF7CeQemp" class="cleanlink" target="_blank">
+          <div class="support_right">
+            <p class="tutorial center">Unterstütze unseren PayPal-Moneypool:</p>
+            <img class="paypal" src="img/paypal.svg">
+          </div>
+        </a>
       </div>
     </div>
+
   </div>
 
   <div class="section phone-disclaimer-hide">
     <div class="section-inner community">
-      <h3>Du hast ein Smartphone?</h3>
+      <h3 class="top-space">Du hast ein Smartphone?</h3>
       <h3>Werde der Held deiner Nachbarschaft!</h3>
       <div class="badge"></div>
       <p class="kiez">Halt dein Kiez up to date. <br>Sammle dabei Badges.</p>
