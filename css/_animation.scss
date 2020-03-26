@@ -321,8 +321,8 @@
   font-weight: $medium;
   z-index: 100;
   overflow: hidden;
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
+  border-right: .15em solid orange; 
+  white-space: nowrap;
   letter-spacing: .05em;
   animation: 
     typing 2s steps(80, end),
@@ -331,7 +331,7 @@
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 20% }
+  to { width: 22% }
 }
 
 @keyframes blink-caret {

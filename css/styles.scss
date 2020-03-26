@@ -42,13 +42,30 @@ html {
   } 
 }
 
+.cleanlink {
+  color: $midnight-blue;
+  text-decoration: none;
+} 
+
+.section-small {
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100vw;
+  position: relative;
+  top: 0; left: 0;
+  display: inline-flex;
+}
+
+.fullheight {
+  height: 100vh;
+}
+
 .section-inner {
   position: relative;
   top: 0; left: 0;
-
   width: 100vw;
-  height: 100vh;
-
   display: inline-flex;
 
   &.start {
@@ -101,7 +118,7 @@ p {
   font-size: 1.3vw;
 }
 
-.illustration { width: 400px; }
+.illustration { width: 500px; }
 
 a {
   color: $turquoise;
@@ -110,7 +127,6 @@ a {
 h3 {
   font-size: 32px;
   font-weight: $light;
-
   margin: 0;
 }
 
@@ -230,8 +246,12 @@ footer {
   box-shadow: 0px 0px 30px 0px #E2E2E2;
 }
 
-#bottom-space {
+.bottom-space {
   margin-bottom: 2%;
+}
+
+.center {
+  text-align: center;
 }
 
 .fab {
@@ -301,7 +321,7 @@ footer {
 .group {
   height: 100%;
   width: 40%;
-  margin-left: 2%
+  margin-left: 4%
 }
 
 .melden {
@@ -321,9 +341,78 @@ footer {
   outline: none;
 
   &:hover {
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
     transition: .3s
   }
+}
+
+.strasse {
+  width: 70vw;
+  margin-top: 2.5%
+}
+
+.roadmap {
+  position: absolute;
+  margin: auto 35%;
+  width: 30% !important;
+}
+
+.support {
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0;
+  align-items: flex-start;
+}
+
+.support_left {
+  border: 2px solid $silver;
+  border-radius: 2px;
+  width: 33vw;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    transition: .3s
+  }
+
+  & p {
+    font-size: 1.5vw;
+  }
+}
+
+.support_right {
+  border: 2px solid $silver;
+  border-radius: 2px;
+  width: 33vw;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    transition: .3s
+  }
+
+  & p {
+    font-size: 1.5vw;
+    margin: 2% 0
+  }
+}
+
+#support_headline {
+  margin-top: 15% 
+}
+
+.video {
+  width: 90%
 }
 
 footer {
