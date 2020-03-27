@@ -11,7 +11,9 @@ for ind, obj in enumerate(data):
     if ind % 2:
         item = f'''
     <div class="timeline-item">
-      <div class="timeline-img"></div>
+      <div class="timeline-img">
+        <img src="{icon}" width="100%"/>
+      </div>
       <div class="timeline-content js--fadeInLeft">
         <h2>{title}</h2>
         <div class="date">{date}</div>
@@ -22,7 +24,9 @@ for ind, obj in enumerate(data):
     else:
         item = f'''
     <div class="timeline-item">
-      <div class="timeline-img"></div>
+      <div class="timeline-img">
+        <img src="{icon}" width="100%"/>
+      </div>
       <div class="timeline-content js--fadeInRight">
         <h2>{title}</h2>
         <div class="date">{date}</div>
