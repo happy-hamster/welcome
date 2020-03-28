@@ -775,14 +775,18 @@ html {
   #section2headline {
     margin-top: 10%; }
   #support {
-    margin-top: 10%;
-    height: 130vh; }
-  .section-support {
+    height: 80vh !important;
     margin-top: 10%; }
-  #support_left {
-    height: 50vh; }
+  .section-support {
+    margin-top: 5%; }
+  .support_left {
+    height: 50vh !important; }
+  .support_right {
+    height: 50vh !important; }
   .paypal {
-    height: 80%; } }
+    height: 80%; }
+  .video {
+    height: 30vh !important; } }
 
 .cleanlink {
   color: #0b0033;
@@ -1095,8 +1099,11 @@ footer {
     font-size: 1.5vw;
     margin: 2% 0; }
 
+#support {
+  height: 55vh; }
+
 #support_headline {
-  margin-top: 5%; }
+  margin-top: 2%; }
 
 .video {
   width: 90%;
