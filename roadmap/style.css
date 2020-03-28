@@ -1,11 +1,4 @@
-:root {
-  greenblue: #26c485;
-  silver: #bad1cd;
-  greenish-grey: #9da9a0;
-  turquoise: #00b9ae;
-  grapefruit: #fe5f55;
-  midnight-blue: #0b0033;
-}
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
 
 section {
   padding: 40px 0;
@@ -31,24 +24,33 @@ h1 {
 }
 
 header {
-  /*background: turquoise;*/
   color: #FFFFFF;
   padding: 0px 0;
 }
 header p {
-  font-family: 'Allura';
   color: rgba(255, 255, 255, 0.2);
   margin-bottom: 0;
   font-size: 60px;
   margin-top: -30px;
 }
 
+.container {
+  width: 90vw !important
+}
+
+@media (max-width: 768px) {
+.container {
+    width: 850px !important;
+}
+}
+
+
 .timeline {
   position: relative;
 }
 .timeline::before {
   content: '';
-  background: #C5CAE9;
+  background: #26c485;
   width: 5px;
   height: 95%;
   position: absolute;
@@ -116,25 +118,6 @@ header p {
   margin-left: -32px;
 }
 
-/*
-a {
-  background: #3F51B5;
-  color: #FFFFFF;
-  padding: 8px 20px;
-  text-transform: uppercase;
-  font-size: 14px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  display: inline-block;
-  border-radius: 2px;
-  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
-}
-a:hover, a:active, a:focus {
-  background: #32408f;
-  color: #FFFFFF;
-  text-decoration: none;
-}*/
-
 .timeline-card {
   padding: 0 !important;
 }
@@ -169,7 +152,7 @@ blockquote {
 }
 
 .date {
-  background: darkblue;
+  background: #26c485;
   display: inline-block;
   color: #FFFFFF;
   padding: 10px;
@@ -177,6 +160,35 @@ blockquote {
   top: 0;
   right: 0;
 }
+
+footer {
+  background-color: #26c485;
+  padding: 20px 0 40px 0;
+  text-align: center;
+  position: relative
+}
+
+.socialmedia {
+  color: white;
+}
+
+.socialmedia a {
+    color: white;
+    margin: 1vh
+}
+
+.projekt {
+  position: absolute;
+  bottom: 3vh;
+  left: 0;
+  width: 300px;
+}
+
+@media (max-width: 900px) {
+  .projekt {
+    position: static;
+  }
+} 
 
 @media screen and (max-width: 768px) {
   .timeline::before {
