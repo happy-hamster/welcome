@@ -51,17 +51,23 @@ html {
     margin-top: 10%
   }
   #support {
-    margin-top: 10%;
-    height: 130vh
+    height: 80vh !important;
+    margin-top: 10%
   }
   .section-support {
-    margin-top: 10%;
+    margin-top: 5%;
   }
-  #support_left {
-    height: 50vh
+  .support_left {
+    height: 50vh !important
+  }
+  .support_right {
+    height: 50vh !important
   }
   .paypal {
     height: 80%
+  }
+  .video {
+    height: 30vh !important
   }
 }
 
@@ -434,8 +440,12 @@ footer {
   }
 }
 
+#support {
+  height: 55vh;
+}
+
 #support_headline {
-  margin-top: 5% 
+  margin-top: 2% 
 }
 
 .video {
