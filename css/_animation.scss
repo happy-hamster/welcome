@@ -317,6 +317,9 @@
   left: 25%;
   top: 37%;
   font-size: 1.8vw;
+  @media (min-width: 1400px) {
+    font-size: 25px;
+  }
   letter-spacing: 0.08px;
   font-weight: $medium;
   z-index: 100;
