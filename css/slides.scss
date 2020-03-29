@@ -10,6 +10,9 @@
   align-items: center;
   padding: 0 5%;
   & > *:nth-child(1) {
+    @media (max-width: 700px) {
+      flex: 0;
+    }
     flex: 1;
     height: 100%;
     line-height: 100%;
@@ -32,6 +35,10 @@
 
 #hhSlide {
   background-color: #f1f1f1;
+  text-align: center;
+  div {
+    position: relative;
+  }
 }
 
 #shopSlide {
@@ -41,6 +48,9 @@
   padding: 0 5%;
   img {
     flex: 1;
+    &:nth-child(1) {
+      display: none;
+    }
   }
 }
 

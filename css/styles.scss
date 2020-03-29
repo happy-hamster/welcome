@@ -13,6 +13,7 @@ html {
   box-sizing: border-box;
   color: $midnight-blue;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 *,
 *:before,
@@ -20,15 +21,29 @@ html {
   box-sizing: inherit;
 }
 
-.logo {
+#logo {
   position: fixed;
-  display: inline-block;
-  top: 60px;
+  display: block;
+  top: 40px;
   left: 40px;
-
-  width: 100px;
-
+  width: 90px;
   z-index: 999;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 900px) {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 10px auto;
+  }
+
+  @media (min-width: 1400px) {
+    width: 150px;
+  }
 }
 
 .projekt {
@@ -44,10 +59,6 @@ html {
   }
   .illustration {
     width: 40% !important;
-  }
-  .logo {
-    position: absolute;
-    top: 25px;
   }
   #section2headline {
     margin-top: 10%;
@@ -91,7 +102,7 @@ html {
 }
 
 .fullheight {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .section-inner {
@@ -187,7 +198,6 @@ footer {
 
 .phone-disclaimer {
   display: none;
-  height: calc(100vh - 60px);
   & > p {
     width: 100%;
     text-align: center;

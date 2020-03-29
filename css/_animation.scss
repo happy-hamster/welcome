@@ -1,9 +1,10 @@
 .animation-wrapper {
   position: relative;
 
-  width: 753px;
+  width: 100vw;
   height: 480px;
-  background: url('../img/hero_illustration.svg') center center;
+  background: url("../img/hero_illustration.svg") center center;
+  background-repeat: no-repeat;
 }
 
 .animation-inner {
@@ -47,8 +48,12 @@
 .status-badge {
   display: inline-block;
 
-  &.yes { background: $greenblue; }
-  &.no { background: $grapefruit; }
+  &.yes {
+    background: $greenblue;
+  }
+  &.no {
+    background: $grapefruit;
+  }
 
   padding: 2px 9px;
 
@@ -286,8 +291,8 @@
 }
 
 .animated.delay-05s {
-  -webkit-animation-delay: .5s;
-  animation-delay: .5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .animated.delay-1s {
@@ -310,7 +315,9 @@
   animation-delay: 4s;
 }
 
-.hide { visibility: hidden !important; }
+.hide {
+  visibility: hidden !important;
+}
 
 .typewriter {
   position: absolute;
@@ -324,20 +331,27 @@
   font-weight: $medium;
   z-index: 100;
   overflow: hidden;
-  border-right: .15em solid orange; 
+  border-right: 0.15em solid orange;
   white-space: nowrap;
-  letter-spacing: .05em;
-  animation: 
-    typing 2s steps(80, end),
-    blink-caret .75s step-end infinite;
+  letter-spacing: 0.05em;
+  animation: typing 2s steps(80, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 22% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 22%;
+  }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }

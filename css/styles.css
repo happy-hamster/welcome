@@ -496,6 +496,9 @@ textarea,
     height: 100%;
     line-height: 100%;
     text-align: center; }
+    @media (max-width: 700px) {
+      .imageTextSlide > *:nth-child(1) {
+        flex: 0; } }
     .imageTextSlide > *:nth-child(1) .helper {
       height: 100%;
       display: inline-block;
@@ -508,7 +511,10 @@ textarea,
     flex: 1; }
 
 #hhSlide {
-  background-color: #f1f1f1; }
+  background-color: #f1f1f1;
+  text-align: center; }
+  #hhSlide div {
+    position: relative; }
 
 #shopSlide {
   display: flex;
@@ -517,6 +523,8 @@ textarea,
   padding: 0 5%; }
   #shopSlide img {
     flex: 1; }
+    #shopSlide img:nth-child(1) {
+      display: none; }
 
 #ctaSlide {
   display: flex;
@@ -530,9 +538,10 @@ textarea,
 
 .animation-wrapper {
   position: relative;
-  width: 753px;
+  width: 100vw;
   height: 480px;
-  background: url("../img/hero_illustration.svg") center center; }
+  background: url("../img/hero_illustration.svg") center center;
+  background-repeat: no-repeat; }
 
 .animation-inner {
   display: inline-block;
@@ -741,8 +750,8 @@ textarea,
     transform: translate3d(0, 0, 0); } }
 
 .animated.delay-05s {
-  -webkit-animation-delay: .5s;
-  animation-delay: .5s; }
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s; }
 
 .animated.delay-1s {
   -webkit-animation-delay: 1s;
@@ -772,9 +781,9 @@ textarea,
   font-weight: 500;
   z-index: 100;
   overflow: hidden;
-  border-right: .15em solid orange;
+  border-right: 0.15em solid orange;
   white-space: nowrap;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   animation: typing 2s steps(80, end), blink-caret 0.75s step-end infinite; }
   @media (min-width: 1400px) {
     .typewriter {
@@ -787,7 +796,8 @@ textarea,
     width: 22%; } }
 
 @keyframes blink-caret {
-  from, to {
+  from,
+  to {
     border-color: transparent; }
   50% {
     border-color: orange; } }
@@ -795,20 +805,33 @@ textarea,
 html {
   box-sizing: border-box;
   color: #0b0033;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden; }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit; }
 
-.logo {
+#logo {
   position: fixed;
-  display: inline-block;
-  top: 60px;
+  display: block;
+  top: 40px;
   left: 40px;
-  width: 100px;
+  width: 90px;
   z-index: 999; }
+  #logo img {
+    width: 100%;
+    height: auto; }
+  @media (max-width: 900px) {
+    #logo {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 10px auto; } }
+  @media (min-width: 1400px) {
+    #logo {
+      width: 150px; } }
 
 .projekt {
   position: absolute;
@@ -821,9 +844,6 @@ html {
     position: static; }
   .illustration {
     width: 40% !important; }
-  .logo {
-    position: absolute;
-    top: 25px; }
   #section2headline {
     margin-top: 10%; }
   #support {
@@ -856,7 +876,7 @@ html {
   display: inline-flex; }
 
 .fullheight {
-  height: 100vh; }
+  min-height: 100vh; }
 
 .section-inner {
   position: relative;
@@ -927,8 +947,7 @@ footer {
       display: none; } }
 
 .phone-disclaimer {
-  display: none;
-  height: calc(100vh - 60px); }
+  display: none; }
   .phone-disclaimer > p {
     width: 100%;
     text-align: center;
