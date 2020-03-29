@@ -32,136 +32,7 @@
 <script type="text/javascript">
     let members_list_div = document.getElementById('cubes')
     let members_data = [
-        {
-            name: "",
-            position: "",
-            profile_image: "https://static.pexels.com/photos/324658/pexels-photo-324658.jpeg",
-            social: {
-                github: "",
-                twitter: "",
-                instagram: "",
-                reddit: "",
-                youtube: "",
-                facebook: "",
-            }
-        },
-        {
-            name: "Joost",
-            position: "",
-            profile_image: "joost.jpg",
-            social: {
-                github: "",
-                twitter: "",
-                instagram: "",
-                reddit: "",
-                youtube: "",
-                facebook: "",
-            }
-        },
-        {
-            name: "David",
-            position: "",
-            profile_image: "david.jpg",
-            social: {
-                github: "",
-                twitter: "",
-                instagram: "",
-                reddit: "",
-                youtube: "",
-                facebook: "",
-            }
-        },
-        {
-            name: "Ben",
-            position: "",
-            profile_image: "ben.jpg",
-            social: {
-                github: "",
-                twitter: "",
-                instagram: "",
-                reddit: "",
-                youtube: "",
-                facebook: "",
-            }
-        },
-        {
-            name: "Hendrik",
-            position: "",
-            profile_image: "hendik.JPG",
-            social: {
-                github: "",
-                twitter: "",
-                instagram: "",
-                reddit: "",
-                youtube: "",
-                facebook: "",
-            }
-        },
-        {
-            name: "Niclas",
-            position: "",
-            profile_image: "niclas.jpg",
-            social: {
-                github: "",
-                twitter: "",
-                instagram: "",
-                reddit: "",
-                youtube: "",
-                facebook: "",
-            }
-        },
-        {
-            name: "Patrick",
-            position: "",
-            profile_image: "patrick.jpg",
-            social: {
-                github: "",
-                twitter: "",
-                instagram: "",
-                reddit: "",
-                youtube: "",
-                facebook: "",
-            }
-        },
-        {
-            name: "Robert",
-            position: "",
-            profile_image: "robert.jpg",
-            social: {
-                github: "",
-                twitter: "",
-                instagram: "",
-                reddit: "",
-                youtube: "",
-                facebook: "",
-            }
-        },
-        {
-            name: "Tim",
-            position: "",
-            profile_image: "tim.jpeg",
-            social: {
-                github: "",
-                twitter: "",
-                instagram: "",
-                reddit: "",
-                youtube: "",
-                facebook: "",
-            }
-        }/*,
-        {
-            name: "",
-            position: "",
-            profile_image: "https://static.pexels.com/photos/324658/pexels-photo-324658.jpeg",
-            social: {
-                github: "",
-                twitter: "",
-                instagram: "",
-                reddit: "",
-                youtube: "",
-                facebook: "",
-            }
-        },
+        /*
         {
             name: "",
             position: "",
@@ -175,40 +46,204 @@
                 facebook: "",
             }
         },*/
+        {
+            name: "Joost",
+            position: "",
+            profile_image: "joost.jpg",
+            social: {
+                github: "github.com/MrKraboom",
+                twitter: "",
+                instagram: "",
+                reddit: "",
+                youtube: "",
+                facebook: "",
+            }
+        },
+        {
+            name: "David",
+            position: "",
+            profile_image: "david.jpg",
+            social: {
+                github: "github.com/DavidSchmidt00",
+                twitter: "",
+                instagram: "",
+                reddit: "",
+                youtube: "",
+                facebook: "",
+            }
+        },
+        {
+            name: "Ben",
+            position: "",
+            profile_image: "ben.jpg",
+            social: {
+                github: "github.com/benfu99",
+                twitter: "",
+                instagram: "",
+                reddit: "",
+                youtube: "",
+                facebook: "",
+            }
+        },
+        {
+            name: "Hendrik",
+            position: "",
+            profile_image: "hendik.JPG",
+            social: {
+                github: "github.com/elsholz",
+                twitter: "",
+                instagram: "",
+                reddit: "",
+                youtube: "",
+                facebook: "",
+            }
+        },
+        {
+            name: "Niclas",
+            position: "",
+            profile_image: "niclas.jpg",
+            social: {
+                github: "github.com/nclskfm",
+                twitter: "",
+                instagram: "",
+                reddit: "",
+                youtube: "",
+                facebook: "",
+            }
+        },
+        {
+            name: "Patrick",
+            position: "",
+            profile_image: "patrick.jpg",
+            social: {
+                github: "github.com/patrickstecker",
+                twitter: "",
+                instagram: "",
+                reddit: "",
+                youtube: "",
+                facebook: "",
+            }
+        },
+        {
+            name: "Robert",
+            position: "",
+            profile_image: "robert.jpg",
+            social: {
+                github: "RobSpot-Gaming",
+                twitter: "",
+                instagram: "",
+                reddit: "",
+                youtube: "",
+                facebook: "",
+            }
+        },
+        {
+            name: "Tim",
+            position: "",
+            profile_image: "tim.jpeg",
+            social: {
+                github: "timgrohmann",
+                twitter: "",
+                instagram: "",
+                reddit: "",
+                youtube: "",
+                facebook: "",
+            }
+        },
+        {
+            name: "Mary",
+            position: "",
+            profile_image: "mary.jpeg",
+            social: {
+                github: "github.com/mariekrause",
+                twitter: "",
+                instagram: "",
+                reddit: "",
+                youtube: "",
+                facebook: "",
+            }
+        },
+        {
+            name: "Max",
+            position: "",
+            profile_image: "max.jpg",
+            social: {
+                github: "github.com/makr173",
+                twitter: "",
+                instagram: "",
+                reddit: "",
+                youtube: "",
+                facebook: "",
+            }
+        },
+        {
+            name: "Sidney",
+            position: "",
+            profile_image: "sidney.jpeg",
+            social: {
+                github: "github.com/sdnyco",
+                twitter: "",
+                instagram: "",
+                reddit: "",
+                youtube: "",
+                facebook: "",
+            }
+        },
     ]
 
+    /*https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array*/
+    function shuffle(array) {
+        var currentIndex = array.length, temporaryValue, randomIndex;
+
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+
+            // Pick a remaining element...
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+
+            // And swap it with the current element.
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+    }
+
+    shuffle(members_data)
+
     members_data.forEach(function (item, index) {
-        // skip data prototype
-        if (index) {
-            let container = document.createElement("div")
-            container.setAttribute("class", "cube p" + (index))
-            container.style.background = "url(\"meet_the_team/images/scaled_" + item.profile_image + "\") center"
-            container.style.backgroundSize="cover"
+        let container = document.createElement("div")
+        container.setAttribute("class", "cube p" + (index))
+        container.style.background = "url(\"meet_the_team/images/scaled_" + item.profile_image + "\") center"
+        container.style.backgroundSize = "cover"
 
-            let name_div = document.createElement("div")
-            name_div.setAttribute("class", "name")
-            let name_header = document.createElement("h1")
-            name_header.textContent = item.name
-            name_div.appendChild(name_header)
-            let position = document.createElement("p")
-            position.textContent = item.position
-            name_div.appendChild(position)
+        let name_div = document.createElement("div")
+        name_div.setAttribute("class", "name")
+        let name_header = document.createElement("h1")
+        name_header.textContent = item.name
+        name_div.appendChild(name_header)
+        let position = document.createElement("p")
+        position.textContent = item.position
+        name_div.appendChild(position)
 
-            container.appendChild(name_div)
+        container.appendChild(name_div)
 
-            let inner_border_div = document.createElement("div")
-            inner_border_div.setAttribute("class", "innerBorder")
-            container.appendChild(inner_border_div)
+        let inner_border_div = document.createElement("div")
+        inner_border_div.setAttribute("class", "innerBorder")
+        container.appendChild(inner_border_div)
 
-            let darken_div = document.createElement("div")
-            darken_div.setAttribute("class", "darken")
-            container.appendChild(darken_div)
+        let darken_div = document.createElement("div")
+        darken_div.setAttribute("class", "darken")
+        container.appendChild(darken_div)
 
-            let content_div = document.createElement("div")
-            content_div.setAttribute("class", "content")
-            let content_list = document.createElement("ul")
+        let content_div = document.createElement("div")
+        content_div.setAttribute("class", "content")
+        let content_list = document.createElement("ul")
 
-            for (let social_key in item.social) {
+        for (let social_key in item.social) {
+            if (item.social[social_key]) {
                 let li = document.createElement("li")
                 let link = document.createElement("a")
                 link.setAttribute("href", item.social[social_key])
@@ -218,13 +253,12 @@
                 li.appendChild(link)
                 content_list.appendChild(li)
             }
-
-            content_div.appendChild(content_list)
-            container.appendChild(content_div)
-
-            members_list_div.appendChild(container)
         }
 
+        content_div.appendChild(content_list)
+        container.appendChild(content_div)
+
+        members_list_div.appendChild(container)
     })
     /*
         <div class="cube p2">
