@@ -34,7 +34,7 @@ html {
     height: auto;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 900px), (orientation: portrait) {
     position: relative;
     top: 0;
     left: 0;
@@ -51,6 +51,7 @@ html {
   bottom: 3vh;
   left: 0;
   width: 300px;
+  max-width: 100vw;
 }
 
 @media (max-width: 900px) {
@@ -148,9 +149,22 @@ h3 {
 }
 
 footer {
+  position: relative;
   color: $greenish-grey;
   padding: 20px 0 40px 0;
   text-align: center;
+  background-color: $greenblue;
+  color: white;
+  & > p {
+    margin-bottom: 1%;
+    font-size: 16px;
+  }
+  @media (max-width: 900px), (orientation: portrait) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .relative {
@@ -407,14 +421,4 @@ footer {
 
 #support_headline {
   margin-top: 2%;
-}
-
-footer {
-  background-color: $greenblue;
-  color: white;
-  position: relative;
-  & > p {
-    margin-bottom: 1%;
-    font-size: 16px;
-  }
 }

@@ -824,7 +824,7 @@ html {
   #logo img {
     width: 100%;
     height: auto; }
-  @media (max-width: 900px) {
+  @media (max-width: 900px), (orientation: portrait) {
     #logo {
       position: relative;
       top: 0;
@@ -838,7 +838,8 @@ html {
   position: absolute;
   bottom: 3vh;
   left: 0;
-  width: 300px; }
+  width: 300px;
+  max-width: 100vw; }
 
 @media (max-width: 900px) {
   .projekt {
@@ -909,9 +910,21 @@ h3 {
   margin: 0; }
 
 footer {
+  position: relative;
   color: #9da9a0;
   padding: 20px 0 40px 0;
-  text-align: center; }
+  text-align: center;
+  background-color: #26c485;
+  color: white; }
+  footer > p {
+    margin-bottom: 1%;
+    font-size: 16px; }
+  @media (max-width: 900px), (orientation: portrait) {
+    footer {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0; } }
 
 .relative {
   position: relative; }
@@ -1122,11 +1135,3 @@ footer {
 
 #support_headline {
   margin-top: 2%; }
-
-footer {
-  background-color: #26c485;
-  color: white;
-  position: relative; }
-  footer > p {
-    margin-bottom: 1%;
-    font-size: 16px; }
