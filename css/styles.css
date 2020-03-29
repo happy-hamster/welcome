@@ -847,34 +847,12 @@ html {
     width: 40% !important; }
   #section2headline {
     margin-top: 10%; }
-  #support {
-    height: 80vh !important;
-    margin-top: 10%; }
   .section-support {
-    margin-top: 5%; }
-  .support_left {
-    height: 50vh !important; }
-  .support_right {
-    height: 50vh !important; }
-  .paypal {
-    height: 80%; }
-  .video {
-    height: 30vh !important; } }
+    margin-top: 5%; } }
 
 .cleanlink {
   color: #0b0033;
   text-decoration: none; }
-
-.section-small {
-  height: 45vh;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  width: 100vw;
-  position: relative;
-  top: 0;
-  left: 0;
-  display: inline-flex; }
 
 .fullheight {
   min-height: 100vh; }
@@ -1106,48 +1084,44 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 0;
-  align-items: flex-start; }
+  align-items: stretch; }
+  @media (max-width: 900px) {
+    .support {
+      flex-direction: column;
+      width: 100vw; } }
+  .support > a {
+    flex: 1;
+    border: 2px solid #bad1cd;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+    padding: 10px 0; }
+    .support > a:hover {
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+      transition: 0.3s; }
+  .support #paypal {
+    width: 80%; }
 
-.support_left {
-  border: 2px solid #bad1cd;
-  border-radius: 2px;
-  width: 33vw;
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .support_left:hover {
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-    transition: 0.3s; }
-  .support_left p {
-    font-size: 1.5vw; }
-
-.support_right {
-  border: 2px solid #bad1cd;
-  border-radius: 2px;
-  width: 33vw;
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .support_right:hover {
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-    transition: 0.3s; }
-  .support_right p {
-    font-size: 1.5vw;
-    margin: 2% 0; }
-
-#support {
-  height: 55vh; }
+#supportVideo {
+  position: relative;
+  padding-bottom: 45%;
+  width: 80%;
+  padding-top: 0;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 2rem; }
+  #supportVideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 #support_headline {
   margin-top: 2%; }
-
-.video {
-  width: 90%;
-  height: 25vh; }
 
 footer {
   background-color: #26c485;
