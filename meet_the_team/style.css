@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+* {
+  outline-width: 0;
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  background: white; }
+
+#cubeContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#cubeWrapper {
+  width: 850px;
+  display: flex;
+  flex-direction: column; }
+
+#cubes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.head {
+  text-align: center; }
+
+h1 {
+  color: #26c485; }
+
+.moreTeam {
+  text-align: center;
+  margin-top: 25px; }
+  .moreTeam a {
+    color: #444;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: 0.2s ease; }
+    .moreTeam a svg {
+      padding-left: 5px; }
+    .moreTeam a:hover {
+      background: #ddd; }
+
+.cube {
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3), 0 2px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+  .cube .name {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    text-shadow: 0 1px 3px #000;
+    z-index: 3; }
+    .cube .name h1 {
+      font-size: 16px;
+      color: #fff;
+      margin: 0;
+      user-select: none; }
+    .cube .name p {
+      color: #fff;
+      margin: 0;
+      font-size: 14px;
+      user-select: none; }
+  .cube .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s ease;
+    z-index: 2; }
+    .cube .content ul {
+      padding: 0;
+      margin: 0 0 55px 0;
+      cursor: default;
+      text-align: center; }
+      .cube .content ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 11.05px 10px 11.05px;
+        top: 40px;
+        position: relative;
+        opacity: 0;
+        transition: 0.3s ease; }
+        .cube .content ul li a {
+          display: block;
+          color: #fff;
+          font-size: 20px;
+          width: 42px;
+          height: 42px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          transition: 0.3s ease; }
+          .cube .content ul li a:hover {
+            background: rgba(255, 255, 255, 0.2); }
+  .cube:hover .content {
+    opacity: 1; }
+    .cube:hover .content li {
+      top: 15px;
+      opacity: 1;
+      transition: 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55); }
+      .cube:hover .content li:nth-child(2) {
+        transition-delay: 0.2s; }
+      .cube:hover .content li:nth-child(3) {
+        transition-delay: 0.4s; }
+      .cube:hover .content li:nth-child(4) {
+        transition-delay: 0.6s; }
+    .cube:hover .content h1 {
+      top: 0; }
+    .cube:hover .content p {
+      top: 10px; }
+  .cube:hover .innerBorder {
+    width: 90%;
+    height: 90%;
+    opacity: 1; }
+  .cube:hover .darken {
+    opacity: 1; }
+  .cube:last-child, .cube:nth-child(3) {
+    margin-right: 0; }
+
+.darken {
+  background: rgba(38, 50, 56, 0.85);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s ease; }
+
+.innerBorder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid #fff;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s ease; }
+
+/*# sourceMappingURL=style.css.map */
