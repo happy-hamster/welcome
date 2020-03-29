@@ -496,7 +496,7 @@ textarea,
     height: 100%;
     line-height: 100%;
     text-align: center; }
-    @media (max-width: 700px) {
+    @media (max-width: 900px) {
       .imageTextSlide > *:nth-child(1) {
         flex: 0; } }
     .imageTextSlide > *:nth-child(1) .helper {
@@ -523,8 +523,9 @@ textarea,
   padding: 0 5%; }
   #shopSlide img {
     flex: 1; }
-    #shopSlide img:nth-child(1) {
-      display: none; }
+    @media (max-width: 900px) {
+      #shopSlide img:nth-child(1) {
+        display: none; } }
 
 #ctaSlide {
   display: flex;
