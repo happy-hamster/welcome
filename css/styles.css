@@ -919,7 +919,7 @@ footer {
   footer > p {
     margin-bottom: 1%;
     font-size: 16px; }
-  @media (max-width: 900px), (orientation: portrait) {
+  @media (orientation: portrait) {
     footer {
       position: absolute;
       left: 0;
